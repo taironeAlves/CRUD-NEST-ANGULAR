@@ -21,19 +21,32 @@ backend/*.log
 backend/*.tsbuildinfo
 
 # ===========================
-# Frontend - AngularJS (1.x)
+# Frontend - AngularJS
 # ===========================
 frontend/node_modules
 frontend/dist
 frontend/build
 frontend/.env
 frontend/*.log
-
-# Caso use Bower (muito comum em AngularJS antigo)
 frontend/bower_components
 
 # ===========================
-# Logs gerais
+# Docker
+# ===========================
+docker-data
+docker-volume
+*.pid
+*.seed
+
+# Docker override local (caso exista)
+docker-compose.override.yml
+
+# Se usar arquivos locais para banco
+*.sqlite
+*.db
+
+# ===========================
+# Logs
 # ===========================
 logs
 *.log
@@ -55,8 +68,3 @@ pnpm-debug.log*
 # ===========================
 .DS_Store
 Thumbs.db
-
-# ===========================
-# TypeScript
-# ===========================
-*.tsbuildinfo
